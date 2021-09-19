@@ -8,32 +8,32 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Wrongbaud's Blog                          # the main title
+title: ~/FareedFauzi                        # the main title
 
-tagline: Hardware / Software Reverse Engineering  # it will display as the sub-title
+tagline: Malware Analysis and Reversing  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-    A blog focusing on hardware and software reverse engineering
+    Another blog discussing about malware analysis, research and reverse engineering
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
-url: 'https://wrongbaud.github.io'
+url: 'https://fareedfauzi.github.io'
 
-author: wrongbaud                  # change to your full name
+author: fareedfauzi                  # change to your full name
 
-avatar: https://i2.wp.com/wasistdas.co.uk/Owlsploitation/wp-content/uploads/2011/05/bubo2.jpg   # support internet resources
+avatar:    # support internet resources
 
 github:
-  username: wrongbaud             # change to your github username
+  username: 0xfareed             # change to your github username
 
 twitter:
-  username: wrongbaud            # change to your twitter username
+  username: fareedfauzi            # change to your twitter username
 
 social:
-  name: wrongbaud                  # it will shows as the copyright owner in Footer
-  email: wrongbaud@gmail.com             # change to your email address
+  name: fareedfauzi                  # it will shows as the copyright owner in Footer
+  email: fareedradzi@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/wrongbaud      # change to your twitter homepage
-    - https://github.com/wrongbaud       # change to your github homepage
+    - https://twitter.com/0xfareed      # change to your twitter homepage
+    - https://github.com/fareedfauzi       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -48,7 +48,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Asia/Kuala_Lumpur
 
 google_analytics:
   id: ''          # Fill with your Google Analytics ID
