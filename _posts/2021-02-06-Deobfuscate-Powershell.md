@@ -5,7 +5,7 @@ image: ''
 date:   2021-02-06 00:06:00
 tags: [Powershell,Fileless]
 description: 'Learn how to deobfuscate Powershell script in easy way'
-categories: [Note, Tips]
+categories: [Note]
 ---
 
 I came across a fileless malware called Lemon-Duck crypto miner during our (my officemate and I) investigation on suspicious communication in our client network. This malware completely leveraging the PowerShell module to execute most of their payloads.
