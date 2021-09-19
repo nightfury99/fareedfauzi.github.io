@@ -2,7 +2,7 @@
 layout: post
 title:  "An easy way to deaobfuscate Powershell script"
 image: ''
-date:   2020-05-11 00:06:00
+date:   2021-02-06 00:06:00
 tags: [Powershell,Fileless]
 description: 'Learn how to deobfuscate Powershell script in easy way'
 categories: [Note, Tips]
