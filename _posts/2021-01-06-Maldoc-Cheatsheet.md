@@ -2,7 +2,7 @@
 layout: post
 title:  "Malicious Document: Cheatsheet and Note"
 image: ''
-date:   2021-07-01 00:06:00
+date:   2021-01-06 00:06:00
 tags: [Malicious Document]
 description: 'My cheatsheet and note when countering Maldoc'
 categories: [Note]
