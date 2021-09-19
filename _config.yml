@@ -13,7 +13,7 @@ title: ~/FareedFauzi                        # the main title
 tagline: Another blog discussing about malware analysis, research and reverse engineering  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-    Another blog discussing about malware analysis, research and reverse engineering
+    Just another cyber-security blog discussing about malware analysis, malware research and reverse engineering
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
 url: 'https://fareedfauzi.github.io'
 
