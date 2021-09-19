@@ -54,12 +54,12 @@ $decoded = $(New-Object IO.StreamReader ($(New-Object IO.Compression.DeflateStre
 ## Third step
 Copy the full code into the ISE editor.
 
-![1](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/1.png)
+![1](https://user-images.githubusercontent.com/56353946/133936069-fc32a8fa-74ca-422c-a6cd-6afe467185e1.png)
 
 ## Forth step
 After copy the code, run the code by click the "Green Play" icon above the tab. This will make our code run and store the decoded value in variable `$decoded`.
 
-![2](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/2.png)
+![2](https://user-images.githubusercontent.com/56353946/133936077-1681276c-4451-4660-9e5a-a48b1f0fd92e.png)
 
 As you can see in blue PowerShell, the code is executed. 
 
@@ -71,24 +71,24 @@ echo $decoded > decoded_1.txt
 ```
 Because the malware encodes the script multiple times, so I name my decoded text file with the number at the back to indicate my phase in deobfuscate the code.
 
-![3](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/3.png)
+![3](https://user-images.githubusercontent.com/56353946/133936094-05a11cf8-76cf-4c2d-9d4f-d5f23ecf8f70.png)
 
 ## Sixth step
 Open the decoded file and repeat steps 1 until 5. 
 
 The figure below shows the comparison between the original code and decoded version. The problem here, the author of the malware encodes the script multiple times using different techniques.
 
-![4](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/4.png)
+![4](https://user-images.githubusercontent.com/56353946/133936099-c76b7b69-d6f6-4c9c-93dc-5e0e9f6fb8a3.png)
 
 ## Repeat
 Using this technique, we don't need to manually decode the `Char`, reverse char, and many more obfuscation techniques in a manual way. From now, repeat steps 1 until 5. Let's follow along.
 
 Identify the `IEX` and remove it first:
-![5](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/5.png)
+![5](https://user-images.githubusercontent.com/56353946/133936102-c33ae98d-bbd2-4002-b8ef-baf6deea3495.png)
 
 If you don't know what the line does, just run the line in PowerShell like below. Figure below shows that `.( $veRbosePrEfERENCe.TOStrIng()[1,3]+'X'-joIn'')` is actually Invoke-Expression cmdlet.
 
-![6](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/6.png)
+![6](https://user-images.githubusercontent.com/56353946/133936105-22667fd2-f73c-4b45-beb7-538353fbcfe8.png)
 
 If we look into this code, this code stores these long strings (the code) into the variable `$LW7eF`.
 ```
@@ -104,19 +104,19 @@ So we've done removing the IEX.
 
 Next, copy the whole code but without `(( Get-vARIabLE  lw7ef  ).valUe[-1..-( ( Get-vARIabLE  lw7ef  ).valUe.lenGTh )]-jOiN'')` line and execute it. We will execute this line seperately.
 
-![7](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/7.png)
+![7](https://user-images.githubusercontent.com/56353946/133936115-4672ff38-eb64-43cc-be8c-db7080487d48.png)
 
 Then run the above line `(( Get-vARIabLE  lw7ef  ).valUe[-1..-( ( Get-vARIabLE  lw7ef  ).valUe.lenGTh )]-jOiN'')` but with the variable `$decoded` and equal sign at the front like in the below figure. Then, print the value into a text file.
 
-![8](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/8.png)
+![8](https://user-images.githubusercontent.com/56353946/133936142-2ac27262-3eeb-4023-9d29-9b28d64c5eaa.png)
 
-![9](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/9.png)
+![9](https://user-images.githubusercontent.com/56353946/133936146-fd3141f6-baae-4745-b8e7-ccb7ba56497c.png)
 
 On the right side. Our code becomes more readable than before (left side). All we need to continue to deobfuscate the code again.
 
 Identify and remove `IEX`
 
-![10](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/10.png)
+![10](https://user-images.githubusercontent.com/56353946/133936152-19268450-46c0-4b5b-bdca-6a748c537e17.png)
 
 Append our variable in front of the code.
 ```
@@ -132,15 +132,15 @@ schqfh+qfhtasks /delete /tn Rtsa /Fqfh).RePlacE(([Char]75+[Char]118+[Char]49),qf
 
 Copy the whole code and execute it in PowerShell ISE. Print value of variable decoded into another text file.
 
-![11](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/11.png)
+![11](https://user-images.githubusercontent.com/56353946/133936153-1de7bf84-adf1-4fdd-99e9-25bd1136dd3e.png)
 
-![12](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/12.png)
+![12](https://user-images.githubusercontent.com/56353946/133936156-d8f0953a-4ae8-4138-bb51-7392e728239d.png)
 
 Based on the result, still we can see that the code is not fully deobfuscated. Repeat the steps until we get the clean version of the code.
 
 Below is the final deobfuscation of the code, and the script has now become clean and readable.
 
-![13](https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/images/powershell/13.png)
+![13](https://user-images.githubusercontent.com/56353946/133936159-cd1972c4-8e57-4180-88d0-ce883161cadb.png)
 
 # Final result
 Original obfuscate code
