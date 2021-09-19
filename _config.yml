@@ -19,7 +19,7 @@ url: 'https://fareedfauzi.github.io'
 
 author: fareedfauzi                  # change to your full name
 
-avatar:    # support internet resources
+avatar: https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/img/Profile/profile.jpg  # support internet resources
 
 github:
   username: 0xfareed             # change to your github username
