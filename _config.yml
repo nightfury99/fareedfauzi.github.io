@@ -10,7 +10,7 @@
 
 title: ~/FareedFauzi                        # the main title
 
-tagline: Malware Analysis and Reversing  # it will display as the sub-title
+tagline: Another blog discussing about malware analysis, research and reverse engineering  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
     Another blog discussing about malware analysis, research and reverse engineering
