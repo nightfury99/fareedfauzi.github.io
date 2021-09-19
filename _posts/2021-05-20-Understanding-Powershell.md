@@ -8,5 +8,4 @@ description: 'Understanding Powershell in malware analysis'
 categories: [Note]
 ---
 
-# Powershell: Understanding the complexity behind it
 To-do

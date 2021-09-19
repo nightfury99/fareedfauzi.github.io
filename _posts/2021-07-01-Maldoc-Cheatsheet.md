@@ -7,7 +7,7 @@ tags: [Malicious Document]
 description: 'My cheatsheet and note when countering Maldoc'
 categories: [Note]
 ---
-# Malicious Document: Cheatsheet and Note
+
 ## RTF
 
 RTF often comes with exploits targetting Microsoft Word vulnerabilities. Always look for embedded objects and anomalous content in the RTF.
